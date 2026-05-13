@@ -4,48 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Резюме | Джона Хилл</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="resume-wrapper">
-        <div class="controls">
-            <button id="reset-btn" class="btn btn-reset">Сбросить текст</button>
+    <div class="resume-container">
+        <div class="toolbar">
+            <button id="reset-btn" class="btn btn-edit">Сбросить текст</button>
             <button id="download-btn" class="btn btn-pdf">Скачать PDF</button>
         </div>
 
-        <div class="resume-container" id="resume">
-            <header class="fade-in">
-                <div class="avatar-container">
-                    <img src="images.jpg" alt="Фото профиля" class="avatar-img"/>
-                </div>
-                <h1 contenteditable="true" id="name">Джона Хилл</h1>
-                <p class="subtitle" contenteditable="true" id="subtitle">Актер, режиссер, сценарист</p>
-            </header>
-
-            <section class="slide-up">
-                <h2 contenteditable="true" id="experience-title">Опыт работы</h2>
-                <div class="item">
-                    <p contenteditable="true" id="experience-text">В индустрии кино с 2000-го года. Есть опыт работы режиссером и сценаристом. Популярные фильмы в которых участвовал:</p>
-                    <ul contenteditable="true" id="movies-list">
-                        <li>«Человек, который изменил всё» (2011)</li>
-                        <li>«Волк с Уолл-стрит» (2013)</li>
-                        <li>«Парни со стволами» (2016)</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="slide-up">
-                <h2 contenteditable="true" id="skills-title">Навыки</h2>
-                <ul contenteditable="true" id="skills-list">
-                    <li>Актерское мастерство</li>
-                    <li>Импровизация</li>
-                    <li>Сценарное мастерство</li>
-                    <li>Режиссура</li>
-                    <li>Продюсирование</li>
-                </ul>
-            </section>
+        <div class="resume-card" id="resume">
+            <div class="avatar">
+                <span><img src="./images.jpg" ></span>
+            </div>
+            
+            <h1 contenteditable="true" id="name">Джона Хилл</h1>
+            <p class="subtitle" contenteditable="true" id="subtitle">Актер, режиссер, сценарист</p>
+            
+            <hr>
+            
+            <h2 contenteditable="true" id="experience-title">Опыт работы</h2>
+            <p contenteditable="true" id="experience-text">В индустрии кино с 2000-го года. Есть опыт работы режиссером и сценаристом. Популярные фильмы в которых участвовал:</p>
+            
+            <ul contenteditable="true" id="movies-list">
+                <li>«Человек, который изменил всё» (2011)</li>
+                <li>«Волк с Уолл-стрит» (2013)</li>
+                <li>«Парни со стволами» (2016)</li>
+            </ul>
+            
+            <hr>
+            
+            <h2 contenteditable="true" id="skills-title">Навыки</h2>
+            <ul contenteditable="true" id="skills-list">
+                <li>Актерское мастерство</li>
+                <li>Импровизация</li>
+                <li>Сценарное мастерство</li>
+                <li>Режиссура</li>
+                <li>Продюсирование</li>
+            </ul>
         </div>
-        
-    </div>
-    <script src="./script.js"></script>
+
+    <script type="module" src="./script.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-import './styles.css';
+import "./style.css"
 (function() {
     const editableElements = document.querySelectorAll('[contenteditable="true"]');
     function animateElement(el) {
