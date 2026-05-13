@@ -205,22 +205,6 @@ hr {
     height: 1px;
     background: #e2e8f0;
 }
-
-@media (max-width: 760px) {
-    body {
-        padding: 1rem;
-    }
-    .resume-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-    .toolbar {
-        justify-content: center;
-    }
-    .resume-card {
-        padding: 1.2rem;
-    }
-}
 .ripple {
     position: relative;
     overflow: hidden;
@@ -231,9 +215,8 @@ hr {
 .ripple-effect {
     position: absolute;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.6);
     transform: scale(0);
-    animation: rippleAnim 0.5s linear;
+    animation: rippleAnim 1s linear;
     pointer-events: none;
 }
 

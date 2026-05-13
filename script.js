@@ -1,3 +1,4 @@
+import './styles.css';
 (function() {
     const editableElements = document.querySelectorAll('[contenteditable="true"]');
     function animateElement(el) {
@@ -70,11 +71,10 @@
         ripple.style.top = `${y}px`;
         ripple.style.position = 'absolute';
         ripple.style.pointerEvents = 'none';
-        
         element.style.position = 'relative';
         element.appendChild(ripple);
         
-        setTimeout(() => ripple.remove(), 600);
+        setTimeout(() => ripple.remove(), 1000)
     }
     
     function initRipple() {
@@ -112,7 +112,7 @@
         
         const btn = document.getElementById('download-btn');
         const originalText = btn.innerHTML;
-        btn.innerHTML = '⏳ Генерация PDF...';
+        btn.innerHTML = 'Генерация PDF...';
         btn.disabled = true;
         
         const originalOverflow = element.style.overflow;
