@@ -2,44 +2,52 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Резюме</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Резюме | Джона Хилл</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div class="resume-container" id="resume">
-        <header class="fade-in">
-            <h1 contenteditable="true">Джона Хилл</h1>
-            <img src="images.jpg"/>
-            <p class="subtitle" contenteditable="true">Актер, режиссер, сценарист</p>
-        </header>
+    <div class="resume-wrapper">
+        <div class="controls">
+            <button id="reset-btn" class="btn btn-reset">Сбросить текст</button>
+            <button id="download-btn" class="btn btn-pdf">Скачать PDF</button>
+        </div>
 
-        <section class="slide-up">
-            <h2 contenteditable="true">Опыт работы</h2>
-            <div class="item">
-                <p contenteditable="true">В индустрии кино с 2000-го года. Есть опыт работы режиссером и сценаристом. Популярные фильмы в которых участвовал:</p>
-                <ul contenteditable="true">
-                    <li>«Человек, который изменил всё» (2011)</li>
-                    <li>«Волк с Уолл-стрит» (2013)</li>
-                    <li>«Парни со стволами» (2016)</li>
+        <div class="resume-container" id="resume">
+            <header class="fade-in">
+                <div class="avatar-container">
+                    <img src="images.jpg" alt="Фото профиля" class="avatar-img" onerror="this.src='https://via.placeholder.com/150?text=Photo'"/>
+                </div>
+                <h1 contenteditable="true" id="name">Джона Хилл</h1>
+                <p class="subtitle" contenteditable="true" id="subtitle">Актер, режиссер, сценарист</p>
+            </header>
+
+            <section class="slide-up">
+                <h2 contenteditable="true" id="experience-title">Опыт работы</h2>
+                <div class="item">
+                    <p contenteditable="true" id="experience-text">В индустрии кино с 2000-го года. Есть опыт работы режиссером и сценаристом. Популярные фильмы в которых участвовал:</p>
+                    <ul contenteditable="true" id="movies-list">
+                        <li>«Человек, который изменил всё» (2011)</li>
+                        <li>«Волк с Уолл-стрит» (2013)</li>
+                        <li>«Парни со стволами» (2016)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="slide-up">
+                <h2 contenteditable="true" id="skills-title">Навыки</h2>
+                <ul contenteditable="true" id="skills-list">
+                    <li>Актерское мастерство</li>
+                    <li>Импровизация</li>
+                    <li>Сценарное мастерство</li>
+                    <li>Режиссура</li>
+                    <li>Продюсирование</li>
                 </ul>
-            </div>
-        </section>
-
-        <section class="slide-up">
-            <h2 contenteditable="true">Навыки</h2>
-            <ul contenteditable="true">
-                <li>Актерское мастерство</li>
-                <li>Импровизация</li>
-                <li>Сценарное мастерство</li>
-                <li>Режиссура</li>
-                <li>Продюсирование</li>
-            </ul>
-        </section>
+            </section>
+        </div>
+        
     </div>
 
-    <div class="controls">
-        <button id="download-btn">Скачать PDF</button>
-    </div>
-    <script src="https://cloudflare.com"></script>
-    <script src="/Lab_14_JS_PDF_Material_Wave/js/script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
